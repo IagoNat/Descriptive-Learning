@@ -3,9 +3,17 @@
 #include <string>
 #include <unordered_map>
 
+#define DATA_PATH "../data/online_retail.csv"
+#define RES_PATH "../data/results.json"
+
 using Item = int;
 using Transaction = std::vector<int>;
 using Dataset = std::vector<Transaction>;
+using Itemset = std::vector<int>;
+struct MiningResult {
+  std::vector<std::pair<Itemset, int>> patterns;
+  double runtime;
+};
 
 std::unordered_map<std::string, std::vector<std::string>>
 load_raw_baskets(const std::string& filename);
@@ -28,3 +36,20 @@ Dataset build_filtered_dataset(
     const std::unordered_map<std::string,
     std::vector<std::string>>& baskets,
     const std::unordered_map<std::string,int>& item_map);
+
+Dataset load_online_retail_subset(
+  const std::string& filename,
+  int top_k
+);
+
+Dataset load_dataset(
+  const std::string& filename,
+  int top_k
+);
+
+void write_json_result(
+    std::ofstream& out,
+    const std::string& algorithm,
+    int n_items,
+    const MiningResult& res
+);

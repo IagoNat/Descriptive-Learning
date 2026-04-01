@@ -1,0 +1,24 @@
+{
+  "naive": {
+    "15": {
+      "runtime": 4.17739,
+      "result": [
+        {"items": [13], "support": 1220},
+        {"items": [6], "support": 1458},
+        {"items": [9], "support": 1266},
+        {"items": [3], "support": 1706},
+        {"items": [7], "support": 1334},
+        {"items": [8], "support": 1295},
+        {"items": [12], "support": 1212},
+        {"items": [10], "support": 1250},
+        {"items": [1], "support": 2169},
+        {"items": [14], "support": 1201},
+        {"items": [11], "support": 1231},
+        {"items": [4], "support": 1607},
+        {"items": [5], "support": 1467},
+        {"items": [2], "support": 2135},
+        {"items": [0], "support": 2302}
+      ]
+    }
+  }
+}

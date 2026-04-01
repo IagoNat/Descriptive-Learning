@@ -5,8 +5,7 @@
 
 using namespace std;
 
-static bool 
-is_subset(
+static bool is_subset(
   const Itemset& X, 
   const Transaction& t
 )
@@ -30,8 +29,7 @@ support(
   return count;
 }
 
-static void
-dfs(
+static void dfs(
   const vector<int>& items,
   int idx,
   Itemset& current,
@@ -40,7 +38,7 @@ dfs(
   vector<pair<Itemset, int>>& patterns
 )
 {
-  if(idx == items.size())
+  if(static_cast<size_t>(idx) == items.size())
   {
     if(!current.empty())
     {
@@ -58,8 +56,7 @@ dfs(
   current.pop_back();
 }
 
-MiningResult
-naive_mine(
+MiningResult naive_mine(
   const Dataset& D,
   int minsup
 )
