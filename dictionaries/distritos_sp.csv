@@ -1,0 +1,200 @@
+chave,valor
+5,A ALVIM
+1,A RASA
+3,ANHANGUERA
+4,ARICANDUVA
+2,AT PINHEIRO
+1,Agua Rasa
+2,Alto de Pinheiros
+3,Anhanguera
+4,Aricanduva
+5,Artur Alvim
+6,B FUNDA
+9,B RETIRO
+7,B VISTA
+8,BELEM
+10,BRAS
+11,BRASILANDIA
+12,BUTANTA
+6,Barra Funda
+7,Bela Vista
+8,Belem
+9,Bom Retiro
+10,Bras
+11,Brasilandia
+12,Butanta
+21,C ADEMAR
+22,C DUTRA
+23,C LIDER
+18,C REDONDO
+24,C TIRADENTE
+20,C VERDE
+13,CAMBUCI
+17,CANGAIBA
+19,CARRAO
+25,CONSOLACAO
+14,CPO BELO
+15,CPO GRANDE
+16,CPO LIMPO
+26,CURSINO
+13,Cambuci
+14,Campo Belo
+15,Campo Grande
+16,Campo Limpo
+17,Cangaiba
+18,Capao Redondo
+19,Carrao
+20,Casa Verde
+21,Cidade Ademar
+22,Cidade Dutra
+23,Cidade Lider
+24,Cidade Tiradentes
+25,Consolacao
+26,Cursino
+9997,Código não encontrado nos dicionários oficiais.
+9999,Código não encontrado nos dicionários oficiais.
+999997,Código não encontrado nos dicionários oficiais.
+27,E MATARAZZO
+27,Ermelino Matarazzo
+28,FREGUESIA D
+0,Fora do Estado de São Paulo
+28,Freguesia do Ó
+29,GRAJAU
+30,GUAIANAZES
+29,Grajau
+30,Guaianazes
+31,IGUATEMI
+32,IPIRANGA
+33,ITAIM BIBI
+34,ITAIM PAULI
+35,ITAQUERA
+-1,Ignorado
+31,Iguatemi
+32,Ipiranga
+33,Itaim Bibi
+34,Itaim Paulista
+35,Itaquera
+44,J BONIFACIO
+36,JABAQUARA
+37,JACANA
+38,JAGUARA
+39,JAGUARE
+40,JARAGUA
+41,JD ANGELA
+42,JD HELENA
+43,JD PAULISTA
+36,Jabaquara
+37,Jacana
+38,Jaguara
+39,Jaguare
+40,Jaragua
+41,Jardim Angela
+42,Jardim Helena
+43,Jardim Paulista
+44,Jose Bonifacio
+45,LAJEADO
+46,LAPA
+47,LIBERDADE
+48,LIMAO
+45,Lajeado
+46,Lapa
+47,Liberdade
+48,Limao
+49,MANDAQUI
+50,MARSILAC
+51,MOEMA
+52,MOOCA
+53,MORUMBI
+49,Mandaqui
+50,Marsilac
+51,Moema
+52,Mooca
+53,Morumbi
+54,N CACHOEIRI
+54,Nova Cachoeirinha
+9999,OUTROS SP
+99,Outros Municípios de São Paulo
+55,PARELHEIROS
+56,PARI
+58,PEDREIRA
+59,PENHA
+60,PERDIZES
+61,PERUS
+62,PINHEIROS
+63,PIRITUBA
+57,PRQ CARMO
+64,PTE RASA
+55,Parelheiros
+56,Pari
+57,Parque do Carmo
+58,Pedreira
+59,Penha
+60,Perdizes
+61,Perus
+62,Pinheiros
+63,Pirituba
+64,Ponte Rasa
+67,R PEQUENO
+65,R TAVARES
+66,REPUBLICA
+65,Raposo Tavares
+66,Republica
+67,Rio Pequeno
+71,S AMARO
+69,S CECILIA
+72,S DOMINGOS
+73,S LUCAS
+74,S LUIS
+75,S MATEUS
+76,S MIGUEL
+77,S RAFAEL
+68,SACOMA
+70,SANTANA
+78,SAPOPEMBA
+79,SAUDE
+80,SE
+81,SOCORRO
+68,Sacoma
+69,Santa Cecilia
+70,Santana
+71,Santo Amaro
+72,Sao Domingos
+73,Sao Lucas
+74,Sao Luis
+75,Sao Mateus
+76,Sao Miguel
+77,Sao Rafael
+78,Sapopemba
+79,Saude
+81,Socorro
+80,Sé
+82,TATUAPE
+83,TREMEMBE
+84,TUCURUVI
+82,Tatuape
+83,Tremembe
+84,Tucuruvi
+85,VL ANDRADE
+86,VL CURUCA
+87,VL FORMOSA
+91,VL GUILHERM
+88,VL JACUI
+89,VL LEOPOLDI
+90,VL MARIA
+92,VL MARIANA
+93,VL MATILDE
+94,VL MEDEIROS
+95,VL PRUDENTE
+96,VL SONIA
+85,Vila Andrade
+86,Vila Curuca
+87,Vila Formosa
+91,Vila Guilherme
+88,Vila Jacui
+89,Vila Leopoldina
+90,Vila Maria
+92,Vila Mariana
+93,Vila Matilde
+94,Vila Medeiros
+95,Vila Prudente
+96,Vila Sonia
