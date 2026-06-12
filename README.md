@@ -1,244 +1,178 @@
-# Descriptive Learning Lab
+# Descoberta de Subgrupos para Identificação de Perfis de Alta Remuneração na RAIS 2024
 
-This repository documents my practical exploration of **Descriptive Learning and Pattern Mining**, developed alongside the *Aprendizado Descritivo* course at UFMG.
+Projeto desenvolvido para a disciplina **Aprendizado Descritivo (2026/1)** da Universidade Federal de Minas Gerais (UFMG).
 
-The goal of this repository is not only to follow the course content, but to go **beyond the syllabus** through hands-on experimentation, algorithm implementation, and applied data analysis.
+## Objetivo
 
-All learning is done through **code, experiments, and reproducible notebooks**.
+O objetivo deste trabalho é aplicar técnicas de **Subgroup Discovery** sobre dados da **RAIS 2024** para identificar perfis associados às maiores remunerações do mercado formal brasileiro.
 
----
-
-# Learning Strategy
-
-My approach is based on three principles:
-
-### 1. Learn Through Implementation
-
-For every major concept or algorithm, I try to:
-
-* implement the algorithm **from scratch**
-* reproduce results using **Python libraries**
-* test the algorithm on **real datasets**
-
-This allows me to understand both the **theory and practical behavior** of descriptive learning algorithms.
+A análise busca encontrar subgrupos interpretáveis caracterizados por atributos demográficos e ocupacionais, permitindo compreender quais características aparecem com maior frequência entre trabalhadores de alta renda.
 
 ---
 
-### 2. Connect Theory With Practice
+## Base de Dados
 
-The course bibliography provides the **theoretical foundations**, especially in:
+Foi utilizada a base da **Relação Anual de Informações Sociais (RAIS) 2024**, disponibilizada pelo Ministério do Trabalho e Emprego.
 
-* pattern mining
-* rule learning
-* descriptive pattern discovery
-* contrast and subgroup mining
+Após o processo de limpeza e pré-processamento, a base final utilizada na mineração contém:
 
-This repository complements those materials with **practical implementation and experimentation**.
+* 465.916 registros
+* 13 atributos
+* informações demográficas, educacionais e ocupacionais
 
----
+Os alvos analisados foram definidos pelos percentis de remuneração:
 
-### 3. Build a Research-Oriented Knowledge Base
-
-Instead of solving isolated exercises, this repository is structured as a **growing laboratory of experiments**, covering different areas of descriptive learning.
-
-The goal is to build intuition about:
-
-* how patterns emerge in data
-* how algorithms search for structure
-* how pattern quality is evaluated
-* how these methods apply to real problems
+| Target | Percentil | Limite salarial |
+| ------ | --------- | --------------- |
+| P90    | 90%       | R$ 5.264,20     |
+| P95    | 95%       | R$ 7.874,36     |
+| P99    | 99%       | R$ 19.371,97    |
 
 ---
 
-# Core Topics Explored
+## Metodologia
 
-The repository follows the structure of the course, focusing on the main areas of **descriptive pattern discovery**:
+O processo experimental foi dividido em cinco etapas:
 
-### Frequent Pattern Mining
+1. Leitura dos microdados da RAIS
+2. Normalização e tradução dos atributos categóricos
+3. Construção dos targets binários
+4. Descoberta de subgrupos utilizando PySubgroup
+5. Avaliação dos padrões encontrados
 
-Discovering patterns that frequently appear in datasets.
+Foi utilizada a seguinte configuração:
 
-Examples:
-
-* Apriori
-* FP-Growth
-* Eclat
-
-Applications:
-
-* market basket analysis
-* co-occurrence discovery
-* recommendation systems
+* Algoritmo: Beam Search
+* Biblioteca: PySubgroup
+* Profundidade máxima: 4
+* Top-k: 20 subgrupos
+* Quality Function: StandardQF(0.5)
 
 ---
 
-### Association Rule Mining
+## Experimentos Realizados
 
-Finding relationships between items or events.
+Foram conduzidos seis experimentos:
 
-Key concepts:
+### Experimento 1 — Redundância
 
-* support
-* confidence
-* lift
-* conviction
-* leverage
+Avaliação da sobreposição entre os subgrupos encontrados utilizando Similaridade de Jaccard.
 
-Applications:
+### Experimento 2 — Cobertura
 
-* product recommendation
-* medical correlations
-* behavioral analysis
+Análise da cobertura acumulada dos casos positivos pelos subgrupos descobertos.
 
----
+### Experimento 3 — Frequência de Atributos
 
-### Sequential Pattern Mining
+Identificação dos atributos mais frequentes nos padrões encontrados.
 
-Discovering patterns in ordered data such as:
+### Experimento 4 — Diversidade
 
-* user behavior
-* clickstreams
-* biological sequences
-* logs
+Cálculo da entropia dos atributos utilizados nos subgrupos.
 
-Algorithms explored:
+### Experimento 5 — Influence da Quality Function
 
-* GSP
-* PrefixSpan
-* SPADE
+Comparação dos resultados obtidos com:
+
+* StandardQF(0.0)
+* StandardQF(0.5)
+* StandardQF(1.0)
+
+### Experimento 6 — Generalização
+
+Validação dos padrões através de divisão treino/teste.
 
 ---
 
-### Graph Pattern Mining
+## Estrutura do Projeto
 
-Mining patterns inside graph structures.
-
-Applications:
-
-* molecular structures
-* social networks
-* knowledge graphs
-
-Example topics:
-
-* frequent subgraph mining
-* structural pattern discovery
-
----
-
-### Subgroup Discovery
-
-Finding **interpretable subsets of data** where the behavior of a target variable is unusual or interesting.
-
-Example pattern:
-
-```
-Age > 60 AND cholesterol > 200
-→ higher probability of heart disease
+```text
+.
+├── subgroup_discovery.ipynb
+│
+├── data/
+│   ├── extracted/
+│   └── arquivos.json
+│
+├── dictionaries/
+│
+├── readers/
+├── discovery/
+├── profiling/
+├── normalization/
+│
+├── requirements.txt
+└── README.md
 ```
 
-This area connects strongly to **interpretable machine learning**.
-
 ---
 
-### Exceptional Model Mining
+## Instalação
 
-Discovering **subsets of data where a model behaves differently**.
+Criar ambiente virtual:
 
-Example:
-
-```
-A regression model works well for one subgroup
-but performs poorly for another.
+```bash
+python -m venv .venv
 ```
 
-This helps reveal **hidden structures and model limitations**.
+Ativar ambiente:
 
----
+Linux:
 
-# Repository Structure
-
-```
-descriptive-learning-lab/
-
-frequent_patterns/
-    apriori_from_scratch.py
-    fp_growth.py
-    pattern_experiments.ipynb
-
-association_rules/
-    rule_metrics.py
-    rule_mining.ipynb
-
-sequence_mining/
-    prefixspan.py
-    sequence_patterns.ipynb
-
-graph_mining/
-    graph_pattern_experiments.ipynb
-
-subgroup_discovery/
-    subgroup_search.py
-    subgroup_analysis.ipynb
-
-exceptional_model_mining/
-    emm_experiments.ipynb
-
-datasets/
+```bash
+source .venv/bin/activate
 ```
 
-Each topic includes:
+Windows:
 
-* algorithm implementations
-* experiments with real datasets
-* notebooks documenting insights and results
+```bash
+.venv\Scripts\activate
+```
 
----
+Instalar dependências:
 
-# Tools Used
-
-Main libraries used in this repository:
-
-* Python
-* NumPy
-* Pandas
-* scikit-learn
-* matplotlib / seaborn
-* networkx
-* mlxtend
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-# Learning Resources
+## Dependências
 
-The theoretical foundations are mainly based on:
+Principais bibliotecas utilizadas:
 
-* *Data Mining and Analysis – Zaki & Meira*
-* *Supervised Descriptive Pattern Mining – Ventura & Luna*
-* *Foundations of Rule Learning – Fürnkranz et al.*
-* *Contrast Data Mining – Dong & Bailey*
-* *Machine Learning: The Art and Science of Algorithms that Make Sense of Data – Flach*
-
-Practical experimentation is complemented with modern machine learning and data science resources.
-
----
-
-# Goals of This Repository
-
-* develop a deep understanding of **descriptive learning algorithms**
-* build intuition about **structure discovery in data**
-* practice **implementing algorithms from scratch**
-* explore **real-world applications of pattern mining**
-* create a **public record of experiments and learning progress**
+* pandas
+* numpy
+* scipy
+* matplotlib
+* seaborn
+* pysubgroup
+* jupyterlab
 
 ---
 
-# Long-Term Vision
+## Execução
 
-This repository is intended to evolve into a **personal laboratory for pattern discovery and descriptive machine learning**, supporting future research and applications in:
+Abra o notebook principal:
 
-* interpretable machine learning
-* knowledge discovery in databases
-* explainable AI
-* large-scale data mining
-* data-driven decision systems
+```bash
+jupyter lab
+```
+
+Em seguida execute as células:
+
+```text
+subgroup_discovery.ipynb
+```
+
+---
+
+## Autor
+
+Iago Nathan Cardoso Araújo
+
+Universidade Federal de Minas Gerais (UFMG)
+
+Departamento de Ciência da Computação
+
+Disciplina: Aprendizado Descritivo (2026/1)
