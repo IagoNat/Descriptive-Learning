@@ -12,7 +12,7 @@ A análise busca encontrar subgrupos interpretáveis caracterizados por atributo
 
 ## Base de Dados
 
-Foi utilizada a base da **Relação Anual de Informações Sociais (RAIS) 2024**, disponibilizada pelo Ministério do Trabalho e Emprego.
+Foi utilizada a base da **Relação Anual de Informações Sociais (RAIS) 2024**, disponibilizada pelo Ministério do Trabalho e Emprego. Os dados podem ser obtidos utilizando o FTP Client (discovery/ftp_client.py) e então extraídos. 
 
 Após o processo de limpeza e pré-processamento, a base final utilizada na mineração contém:
 
