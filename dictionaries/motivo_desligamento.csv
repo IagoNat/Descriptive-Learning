@@ -1,0 +1,42 @@
+chave,valor
+75,Aposentadoria compulsória.
+79,"Aposentadoria especial, com rescisão contratual."
+80,"Aposentadoria especial, sem rescisão contratual."
+72,"Aposentadoria por idade, com rescisão contratual."
+78,"Aposentadoria por idade, sem rescisão contratual."
+73,"Aposentadoria por invalidez, decorrente de acidente do trabalho."
+74,"Aposentadoria por invalidez, decorrente de doença profissional."
+76,"Aposentadoria por invalidez, exceto a decorrente de doença profissional ou acidente do trabalho."
+70,"Aposentadoria por tempo de serviço, com rescisão contratual."
+71,"Aposentadoria por tempo de serviço, sem rescisão contratual."
+33,Cessão
+3,Código não encontrado nos dicionários oficiais.
+89,Código não encontrado nos dicionários oficiais.
+5,Código não encontrado nos dicionários oficiais.
+99,Código não encontrado nos dicionários oficiais.
+7,Código não encontrado nos dicionários oficiais.
+4,Código não encontrado nos dicionários oficiais.
+6,Código não encontrado nos dicionários oficiais.
+2,Código não encontrado nos dicionários oficiais.
+9,Código não encontrado nos dicionários oficiais.
+1,Código não encontrado nos dicionários oficiais.
+8,Código não encontrado nos dicionários oficiais.
+90,Desligamento por Acordo Empregado e Empregador
+63,Falecimento decorrente de acidente do trabalho de trajeto (ocorrido no trajeto residência-trabalho-residência)
+62,Falecimento decorrente de acidente do trabalho típico (que ocorre no exercício de atividades profissionais a serviço da empresa)
+64,Falecimento decorrente de doença profissional.
+60,Falecimento.
+40,Mudança de regime trabalhista.
+0,Não desligado no ano
+-1,Não desligado no ano
+22,Posse em outro cargo inacumulável (específico para servidor público)
+32,Readaptação ou redistribuição (específico para servidor publico)
+34,Redistribuição (específico para servidor publico)
+50,Reforma de militar para a reserva remunerada.
+20,Rescisão com justa causa por iniciativa do empregado (rescisão indireta).
+10,Rescisão com justa causa por iniciativa do empregador ou servidor demitido
+21,Rescisão sem justa causa por iniciativa do empregado ou exoneração a pedido
+11,Rescisão sem justa causa por iniciativa do empregador.
+30,"Transferência de empregado entre estabelecimentos da mesma empresa ou para outra empresa, com ônus para a cedente"
+31,"Transferência de empregado entre estabelecimentos da mesma empresa ou para outra empresa, sem ônus para a cedente"
+12,Término do contrato de trabalho.

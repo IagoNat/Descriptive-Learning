@@ -1,0 +1,56 @@
+chave,valor
+24,Administraçao pública direta e autárquica
+ADM PUBLICA,Administraçao pública direta e autárquica
+25,"Agricultura, silvicultura, criaçao de animais, extrativismo vegetal"
+AGRICULTURA,"Agricultura, silvicultura, criaçao de animais, extrativismo vegetal"
+19,"Com. e administraçao de imóveis, valores mobiliários, serv. Técnico"
+ADM TEC PROF,"Com. e administraçao de imóveis, valores mobiliários, serv. Técnico"
+17,Comércio atacadista
+COM ATACAD,Comércio atacadista
+COM VAREJ,Comércio varejista
+16,Comércio varejista
+15,Construçao civil
+CONSTR CIVIL,Construçao civil
+99,Código não encontrado nos dicionários oficiais.
+98,Código não encontrado nos dicionários oficiais.
+23,Ensino
+ENSINO,Ensino
+EXTR MINERAL,Extrativa mineral
+1,Extrativa mineral
+OUTR/IGN,Ignorado
+-1,Ignorado
+,Ignorado
+BOR FUM COUR,"Ind. da borracha, fumo, couros, peles, similares, ind. diversas"
+9,"Ind. da borracha, fumo, couros, peles, similares, ind. diversas"
+10,"Ind. química de produtos farmacêuticos, veterinários, perfumaria"
+IND QUIMICA,"Ind. química de produtos farmacêuticos, veterinários, perfumaria"
+7,Indústria da madeira e do mobiliário
+MAD E MOBIL,Indústria da madeira e do mobiliário
+12,Indústria de calçados
+IND CALCADOS,Indústria de calçados
+13,"Indústria de produtos alimentícios, bebidas e álcool etílico"
+ALIM E BEB,"Indústria de produtos alimentícios, bebidas e álcool etílico"
+2,Indústria de produtos minerais nao metálicos
+MIN NAO MET,Indústria de produtos minerais nao metálicos
+6,Indústria do material de transporte
+MAT TRANSP,Indústria do material de transporte
+5,Indústria do material elétrico e de comunicaçoes
+ELET E COMUN,Indústria do material elétrico e de comunicaçoes
+8,"Indústria do papel, papelao, editorial e gráfica"
+PAPEL E GRAF,"Indústria do papel, papelao, editorial e gráfica"
+4,Indústria mecânica
+IND MECANICA,Indústria mecânica
+3,Indústria metalúrgica
+IND METALURG,Indústria metalúrgica
+11,Indústria têxtil do vestuário e artefatos de tecidos
+IND TEXTIL,Indústria têxtil do vestuário e artefatos de tecidos
+INST FINANC,"Instituiçoes de crédito, seguros e capitalizaçao"
+18,"Instituiçoes de crédito, seguros e capitalizaçao"
+21,"Serv. de alojamento, alimentaçao, reparaçao, manutençao, redaçao"
+ALOJ COMUNIC,"Serv. de alojamento, alimentaçao, reparaçao, manutençao, redaçao"
+14,Serviços industriais de utilidade pública
+SER UTIL PUB,Serviços industriais de utilidade pública
+22,"Serviços médicos, odontológicos e veterinários"
+MED ODON VET,"Serviços médicos, odontológicos e veterinários"
+20,Transportes e comunicaçoes
+TRAN E COMUN,Transportes e comunicaçoes
